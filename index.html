@@ -18,27 +18,37 @@
     />
     <title>Employee-Details</title>
   </head>
-  <body>
+  <body class="body">
+    <!-- logo -->
+    <div class="logo">
+      <h1 class="logo1">EMPLOYEE</h1>
+      <h3 class="logo2">PAYROLL</h3>
+    </div>
     <!-- make navigation -->
-    <nav class="navbar pad">
-      <h2>Employee Details</h2>
-      <div class="flex">
-        <div class="flex align-center bg-white border-radius pad">
-          <input
-            class="no-border-outline bg-white"
-            type="text"
-            placeholder="search"
-            name="search"
-          />
-          <div class="fa fa-search no-border-outline bg-white"></div>
-        </div>
 
-        <div class="no-border-outline bg-green flex align-center pad add-user">
-          <i class="fa fa-plus no-border-outline bg-green plus-icon"></i>
-          <div class="no-border-outline bg-green">Add User</div>
+    <div class="navbar">
+      <h2>Employee Details</h2>
+      <div class="right-nav">
+        <div class="search-btn">
+          <input class="" type="text" placeholder="search" name="search" />
+          <div class="fa fa-search"></div>
+        </div>
+        <div class="add-user-btn">
+          <i class="fa fa-plus"></i>
+          <div class="">Add User</div>
         </div>
       </div>
-    </nav>
-    <!-- list of employee -->
+    </div>
+    <div class="table">
+      <div class="table-column">
+        <p>NAME</p>
+        <p>GENDER</p>
+        <p>DEPARTMENT</p>
+        <p>SALARY</p>
+        <p>START DATE</p>
+        <p>ACTIONS</p>
+      </div>
+      <div>data</div>
+    </div>
   </body>
 </html>
