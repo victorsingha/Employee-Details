@@ -98,12 +98,12 @@
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
-  grid-template-columns: 30% 5% 35% 5% 15% 10%;
+  grid-template-columns: 25% 10% 30% 5% 15% 15%;
   text-align: center;
 }
 .table-rows {
   display: grid;
-  grid-template-columns: 30% 10% 30% 10% 12% 10%;
+  grid-template-columns: 28% 10% 27% 10% 15% 10%;
 }
 .column-name {
   padding-top: 1rem;
