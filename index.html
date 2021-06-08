@@ -12,14 +12,32 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Employee-Details</title>
   </head>
   <body>
     <!-- make navigation -->
-    <nav class="navbar">
+    <nav class="navbar pad">
       <h2>Employee Details</h2>
-      <button>Search</button>
-      <button>Add User</button>
+      <div class="flex">
+        <div class="flex align-center bg-white border-radius pad">
+          <input
+            class="no-border-outline bg-white"
+            type="text"
+            placeholder="search"
+            name="search"
+          />
+          <div class="fa fa-search no-border-outline bg-white"></div>
+        </div>
+
+        <div class="no-border-outline bg-green flex align-center pad add-user">
+          <i class="fa fa-plus no-border-outline bg-green plus-icon"></i>
+          <div class="no-border-outline bg-green">Add User</div>
+        </div>
+      </div>
     </nav>
     <!-- list of employee -->
   </body>

@@ -2,4 +2,45 @@
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+}
+
+.no-border-outline {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.bg-green {
+  background-color: #82a70c;
+}
+.bg-white {
+  background-color: white;
+}
+.border-radius {
+  border-radius: 30em;
+}
+.pad {
+  padding: 10px;
+}
+
+.add-user {
+  border-radius: 2px;
+  margin-left: 1rem;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.plus-icon {
+  margin-right: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
 }
