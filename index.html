@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -27,20 +32,25 @@
     <!-- make navigation -->
 
     <div class="navbar">
-      <h2>Employee Details</h2>
+      <h2 class="header">Employee Details</h2>
       <div class="right-nav">
         <div class="search-btn">
-          <input class="" type="text" placeholder="search" name="search" />
-          <div class="fa fa-search"></div>
+          <input
+            class="search-input"
+            type="text"
+            placeholder="search"
+            name="search"
+          />
+          <div class="fa fa-search fa-lg"></div>
         </div>
         <div class="add-user-btn">
-          <i class="fa fa-plus"></i>
+          <div class="fa fa-plus"></div>
           <div class="">ADD USER</div>
         </div>
       </div>
     </div>
 
-    <div class="table-rows columns">
+    <div class="columns">
       <p class="column-name">NAME</p>
       <p class="column-name">GENDER</p>
       <p class="column-name">DEPARTMENT</p>
@@ -66,7 +76,7 @@
           <div class="chip">Finance</div>
         </div>
         <div class="salary">
-          <p><span>&#8377;</span> 10,000</p>
+          <p><span>₹</span> 10,000</p>
         </div>
         <div class="start-date"><p>13 Dec 1947</p></div>
         <div class="actions">
@@ -76,21 +86,21 @@
         <div class="name">
           <img
             class="profile-pic"
-            src="https://randomuser.me/api/portraits/men/55.jpg"
+            src="https://randomuser.me/api/portraits/women/90.jpg"
             alt="profile-pic"
           />
-          <p class="employee-name">Johnathan Doe</p>
+          <p class="employee-name">Samantha Query Watson</p>
         </div>
-        <div class="gender"><p>Male</p></div>
+        <div class="gender"><p>Female</p></div>
         <div class="department">
           <div class="chip">Sales</div>
           <div class="chip">HR</div>
           <div class="chip">Finance</div>
         </div>
         <div class="salary">
-          <p><span>&#8377;</span> 10,000</p>
+          <p><span>₹</span> 20,000</p>
         </div>
-        <div class="start-date"><p>13 Dec 1947</p></div>
+        <div class="start-date"><p>19 Dec 1947</p></div>
         <div class="actions">
           <i class="fa fa-lg fa-trash"></i> <i class="fa fa-lg fa-edit"></i>
         </div>
