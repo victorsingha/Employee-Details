@@ -39,26 +39,33 @@
     <!-- form  -->
 
     <div class="form-container">
-      <form action="">
+      <form class="adduser-form" action="">
+        <p class="title">Employee Payroll Form</p>
         <div class="name">
           <p>Name</p>
           <input type="text" />
         </div>
         <div class="profile-pic">
           <p>Profile image</p>
-          <input type="radio" id="male" name="gender" value="male" />
+          <input type="radio" id="image1" name="profilepic" value="image1" />
           <img
             class="profile-pic-adduser"
             src="https://randomuser.me/api/portraits/men/75.jpg"
             alt="profile-pic"
           />
-          <input type="radio" id="female" name="gender" value="female" />
+          <input type="radio" id="image2" name="profilepic" value="image2" />
           <img
             class="profile-pic-adduser"
             src="https://randomuser.me/api/portraits/men/75.jpg"
             alt="profile-pic"
           />
-          <input type="radio" id="other" name="gender" value="other" />
+          <input type="radio" id="image3" name="profilepic" value="image3" />
+          <img
+            class="profile-pic-adduser"
+            src="https://randomuser.me/api/portraits/men/75.jpg"
+            alt="profile-pic"
+          />
+          <input type="radio" id="image4" name="profilepic" value="image4" />
           <img
             class="profile-pic-adduser"
             src="https://randomuser.me/api/portraits/men/75.jpg"
@@ -88,6 +95,7 @@
         <div class="salary">
           <p>Salary</p>
           <input type="range" min="30000" max="50000" value="40000" />
+          <p>40000</p>
         </div>
         <div class="select-date">
           <select id="select-day"></select>
@@ -105,7 +113,11 @@
             <option value="10">November</option>
             <option value="11">December</option>
           </select>
-          <select id="select-year"></select>
+          <select id="select-year">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+          </select>
         </div>
         <div class="notes">
           <label for="notes">Notes:</label>
