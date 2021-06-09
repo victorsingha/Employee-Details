@@ -25,6 +25,7 @@
   background-color: white;
   padding-left: 10%;
   padding-right: 10%;
+  cursor: pointer;
 }
 .logo1 {
   color: #82a70c;
@@ -68,6 +69,8 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .add-user-btn {
+  /* width: 120px;
+  height: 35px; */
   display: flex;
   align-items: center;
   border: none;
@@ -80,12 +83,11 @@
   color: white;
   justify-content: space-evenly;
   height: 1.8rem;
-  border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .add-user-btn:hover {
-  background-color: #5a7404;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #314100;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .table {
   margin-left: 10%;
