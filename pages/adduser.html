@@ -43,91 +43,107 @@
         <p class="title">Employee Payroll Form</p>
         <div class="name">
           <p>Name</p>
-          <input type="text" />
+          <input class="input-field" type="text" />
         </div>
         <div class="profile-pic">
           <p>Profile image</p>
-          <input type="radio" id="image1" name="profilepic" value="image1" />
-          <img
-            class="profile-pic-adduser"
-            src="https://randomuser.me/api/portraits/men/75.jpg"
-            alt="profile-pic"
-          />
-          <input type="radio" id="image2" name="profilepic" value="image2" />
-          <img
-            class="profile-pic-adduser"
-            src="https://randomuser.me/api/portraits/men/75.jpg"
-            alt="profile-pic"
-          />
-          <input type="radio" id="image3" name="profilepic" value="image3" />
-          <img
-            class="profile-pic-adduser"
-            src="https://randomuser.me/api/portraits/men/75.jpg"
-            alt="profile-pic"
-          />
-          <input type="radio" id="image4" name="profilepic" value="image4" />
-          <img
-            class="profile-pic-adduser"
-            src="https://randomuser.me/api/portraits/men/75.jpg"
-            alt="profile-pic"
-          />
+          <div class="radio-profile">
+            <input type="radio" id="image1" name="profilepic" value="image1" />
+            <img
+              class="profile-pic-adduser"
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="profile-pic"
+            />
+            <input type="radio" id="image2" name="profilepic" value="image2" />
+            <img
+              class="profile-pic-adduser"
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="profile-pic"
+            />
+            <input type="radio" id="image3" name="profilepic" value="image3" />
+            <img
+              class="profile-pic-adduser"
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="profile-pic"
+            />
+            <input type="radio" id="image4" name="profilepic" value="image4" />
+            <img
+              class="profile-pic-adduser"
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="profile-pic"
+            />
+          </div>
         </div>
         <div class="gender">
           <p>Gender</p>
-          <input type="radio" id="male" name="gender" value="male" />
-          <label for="male">Male</label><br />
-          <input type="radio" id="female" name="gender" value="female" />
-          <label for="female">Female</label><br />
+          <div class="radio-gender">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+          </div>
         </div>
         <div class="department">
           <p>Department</p>
-          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-          <label for="vehicle1">HR</label>
-          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-          <label for="vehicle2">Sales</label>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-          <label for="vehicle3">Finance</label>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-          <label for="vehicle3">Engineer</label>
-          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-          <label for="vehicle3">Others</label>
+          <div class="checkbox-department">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1">HR</label>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+            <label for="vehicle2">Sales</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+            <label for="vehicle3">Finance</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+            <label for="vehicle3">Engineer</label>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+            <label for="vehicle3">Others</label>
+          </div>
         </div>
         <div class="salary">
           <p>Salary</p>
-          <input type="range" min="30000" max="50000" value="40000" />
+          <input
+            class="range"
+            type="range"
+            min="30000"
+            max="50000"
+            value="40000"
+          />
           <p>40000</p>
         </div>
         <div class="select-date">
-          <select id="select-day"></select>
-          <select id="select-month">
-            <option value="0">January</option>
-            <option value="1">February</option>
-            <option value="2">March</option>
-            <option value="3">April</option>
-            <option value="4">May</option>
-            <option value="5">June</option>
-            <option value="6">July</option>
-            <option value="7">August</option>
-            <option value="8">September</option>
-            <option value="9">October</option>
-            <option value="10">November</option>
-            <option value="11">December</option>
-          </select>
-          <select id="select-year">
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-          </select>
+          <p>Start Date</p>
+          <div class="start-date">
+            <select id="select-day"></select>
+            <select id="select-month">
+              <option value="0">January</option>
+              <option value="1">February</option>
+              <option value="2">March</option>
+              <option value="3">April</option>
+              <option value="4">May</option>
+              <option value="5">June</option>
+              <option value="6">July</option>
+              <option value="7">August</option>
+              <option value="8">September</option>
+              <option value="9">October</option>
+              <option value="10">November</option>
+              <option value="11">December</option>
+            </select>
+            <select id="select-year">
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
         </div>
         <div class="notes">
           <label for="notes">Notes:</label>
-          <textarea id="notes" name="notes" rows="4" cols="50"> </textarea>
+          <textarea class="textarea" id="notes" name="notes" rows="5" cols="50">
+          </textarea>
         </div>
         <div class="button-container">
-          <button class="cancel">Cancel</button>
+          <button class="cancel btn">Cancel</button>
           <div class="right-buttons">
-            <button class="submit">Submit</button
-            ><button class="reset">Reset</button>
+            <button class="submit btn">Submit</button
+            ><button class="reset btn">Reset</button>
           </div>
         </div>
       </form>
