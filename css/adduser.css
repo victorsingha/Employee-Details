@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+}
+.body {
+  height: 100%;
+  background-color: rgb(196, 196, 196);
+}
+.logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.logo1 {
+  color: #82a70c;
+}
+.form-container {
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+  height: 100vh;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-pic-adduser {
+  border-radius: 50%;
+  height: 3rem;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.profile-pic {
+  display: flex;
+  align-items: center;
+}
+.gender {
+  display: flex;
+  align-items: center;
+}
+.department {
+  display: flex;
+  align-items: center;
+}
+.salary {
+  display: flex;
+  align-items: center;
+}
+.select-date {
+  display: flex;
+  align-items: center;
+}
+.notes {
+  display: flex;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
