@@ -68,7 +68,7 @@ function getStartDate() {
   var month = document.getElementById("select-month").value;
   var year = document.getElementById("select-year").value;
 
-  var date = `${day}-${month}-${year}`;
+  var date = `${day} ${month} ${year}`;
   return date;
 }
 function getNotes() {

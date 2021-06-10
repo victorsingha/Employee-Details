@@ -12,6 +12,34 @@
       "startdate": "02-09-2020",
       "notes": "",
       "id": 1
+    },
+    {
+      "name": "Victor Singha",
+      "profile": "https://randomuser.me/api/portraits/men/94.jpg",
+      "gender": "male",
+      "department[]": [
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "",
+      "startdate": "08-Apr-2020",
+      "notes": "",
+      "id": 2
+    },
+    {
+      "name": "Victor Singha",
+      "profile": "https://randomuser.me/api/portraits/men/94.jpg",
+      "gender": "male",
+      "department[]": [
+        "HR",
+        "SALES",
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "48158",
+      "startdate": "01 May 2019",
+      "notes": "",
+      "id": 3
     }
   ]
 }
