@@ -109,6 +109,7 @@
 .input-field {
   height: 30px;
   width: 100%;
+  padding-left: 2px;
   /* margin-left: 105px; */
   /* margin-left: 17.7%; */
   /* background-color: #82a70c; */
@@ -153,6 +154,7 @@
 .textarea {
   /* margin-left: 104px; */
   /* margin-left: 18%; */
+  padding: 2px;
   width: 100%;
   height: 100px;
 }

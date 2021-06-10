@@ -51,25 +51,25 @@
             <input type="radio" id="image1" name="profilepic" value="image1" />
             <img
               class="profile-pic-adduser"
-              src="https://randomuser.me/api/portraits/men/75.jpg"
+              src="https://randomuser.me/api/portraits/men/94.jpg"
               alt="profile-pic"
             />
             <input type="radio" id="image2" name="profilepic" value="image2" />
             <img
               class="profile-pic-adduser"
-              src="https://randomuser.me/api/portraits/men/75.jpg"
+              src="https://randomuser.me/api/portraits/women/75.jpg"
               alt="profile-pic"
             />
             <input type="radio" id="image3" name="profilepic" value="image3" />
             <img
               class="profile-pic-adduser"
-              src="https://randomuser.me/api/portraits/men/75.jpg"
+              src="https://randomuser.me/api/portraits/men/80.jpg"
               alt="profile-pic"
             />
             <input type="radio" id="image4" name="profilepic" value="image4" />
             <img
               class="profile-pic-adduser"
-              src="https://randomuser.me/api/portraits/men/75.jpg"
+              src="https://randomuser.me/api/portraits/women/40.jpg"
               alt="profile-pic"
             />
           </div>
@@ -101,13 +101,20 @@
         <div class="salary">
           <p>Salary</p>
           <input
+            onchange="updateRange(this.value);"
+            name="range"
             class="range"
             type="range"
             min="30000"
             max="50000"
-            value="40000"
+            oninput="this.form.rangeValue.value=this.value"
           />
-          <p>40000</p>
+          <output
+            name="rangeValue"
+            id="rangeValue"
+            oninput="this.form.range.value=this.value"
+            >40000</output
+          >
         </div>
         <div class="select-date">
           <p>Start Date</p>
@@ -149,7 +156,7 @@
         </div>
         <div class="notes">
           <label for="notes">Notes</label>
-          <textarea class="textarea" id="notes" name="notes"> </textarea>
+          <textarea class="textarea" id="notes" name="notes"></textarea>
         </div>
         <div class="button-container">
           <button class="cancel btn">Cancel</button>
