@@ -8,6 +8,8 @@ var employeeData = {
   notes: "",
 };
 
+const url = "http://localhost:3000/employee";
+
 function updateRange(val) {
   document.getElementById("rangeValue").value = val;
   console.log(val);
@@ -51,15 +53,15 @@ function getFemale() {
 }
 
 function getCheckboxValue() {
-  var checkedValue = [];
+  var department = [];
   var inputElements = document.getElementsByClassName("checkbox");
   for (var i = 0; inputElements[i]; ++i) {
     if (inputElements[i].checked) {
-      checkedValue.push(inputElements[i].value);
+      department.push(inputElements[i].value);
     }
   }
   // console.log(checkedValue);
-  return checkedValue;
+  return department;
 }
 function getStartDate() {
   var day = document.getElementById("select-day").value;
@@ -74,11 +76,13 @@ function getNotes() {
   console.log(val);
   employeeData.notes = val;
 }
+
 document.querySelector("#submit").addEventListener("click", function (event) {
   event.preventDefault();
   employeeData.department = getCheckboxValue();
   employeeData.startdate = getStartDate();
-  console.log(employeeData);
+  POST_DATA(employeeData);
+  GET_DATA();
 });
 document.querySelector("#cancel").addEventListener("click", function (event) {
   event.preventDefault();
@@ -87,3 +91,13 @@ document.querySelector("#cancel").addEventListener("click", function (event) {
 document.querySelector("#reset").addEventListener("click", function (event) {
   // event.preventDefault();
 });
+function POST_DATA(employee) {
+  $.post(url, employee, function (data, status) {
+    console.log(data, status);
+  });
+}
+function GET_DATA() {
+  $.get(url, function (data, status) {
+    console.log(data, status);
+  });
+}

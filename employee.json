@@ -1,0 +1,17 @@
+{
+  "employee": [
+    {
+      "name": "John Doe",
+      "profile": "https://randomuser.me/api/portraits/men/80.jpg",
+      "gender": "male",
+      "department[]": [
+        "HR",
+        "SALES"
+      ],
+      "salary": "45169",
+      "startdate": "02-09-2020",
+      "notes": "",
+      "id": 1
+    }
+  ]
+}
