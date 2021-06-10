@@ -158,3 +158,18 @@ i:hover {
   cursor: pointer;
   color: grey;
 }
+@media only screen and (max-width: 813px) and (min-width: 0px) {
+  .navbar {
+    margin: 0px;
+  }
+  .table {
+    padding: 0px;
+    margin: 0px;
+  }
+  .column-name {
+    margin: 0px;
+  }
+  .columns {
+    margin: 0px;
+  }
+}
