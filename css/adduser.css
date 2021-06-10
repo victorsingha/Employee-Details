@@ -29,8 +29,8 @@
   height: 90vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  /* padding-left: 5rem; */
+  /* padding-right: 5rem; */
 }
 .profile-pic-adduser {
   border-radius: 50%;
@@ -45,7 +45,6 @@
 }
 .profile-pic {
   /* display: flex; */
-
   /* flex-wrap: wrap; */
   display: grid;
   grid-template-columns: 20% 80%;
@@ -100,8 +99,8 @@
   justify-content: space-between;
   font-weight: 600;
   color: #42515f;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 .title {
   font-size: x-large;
@@ -168,4 +167,14 @@
 select {
   width: 120px;
   height: 35px;
+}
+
+@media only screen and (max-width: 720px) and (min-width: 0px) {
+  .form-container {
+    margin: 0px;
+  }
+  .adduser-form {
+    margin: 0px;
+    padding: 0px;
+  }
 }
