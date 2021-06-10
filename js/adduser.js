@@ -82,7 +82,8 @@ document.querySelector("#submit").addEventListener("click", function (event) {
 });
 document.querySelector("#cancel").addEventListener("click", function (event) {
   event.preventDefault();
+  location.href = "index.html";
 });
 document.querySelector("#reset").addEventListener("click", function (event) {
-  event.preventDefault();
+  // event.preventDefault();
 });
