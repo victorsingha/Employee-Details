@@ -43,30 +43,60 @@
         <p class="title">Employee Payroll Form</p>
         <div class="name">
           <p>Name</p>
-          <input class="input-field" type="text" />
+          <input
+            name="name"
+            class="input-field"
+            onkeyup="getName()"
+            id="name"
+            type="text"
+          />
         </div>
         <div class="profile-pic">
           <p>Profile image</p>
           <div class="radio-profile">
-            <input type="radio" id="image1" name="profilepic" value="image1" />
+            <input
+              onclick="getimage1()"
+              type="radio"
+              id="image1"
+              name="profilepic"
+              value="https://randomuser.me/api/portraits/men/94.jpg"
+            />
             <img
               class="profile-pic-adduser"
               src="https://randomuser.me/api/portraits/men/94.jpg"
               alt="profile-pic"
             />
-            <input type="radio" id="image2" name="profilepic" value="image2" />
+            <input
+              onclick="getimage2()"
+              type="radio"
+              id="image2"
+              name="profilepic"
+              value="https://randomuser.me/api/portraits/women/75.jpg"
+            />
             <img
               class="profile-pic-adduser"
               src="https://randomuser.me/api/portraits/women/75.jpg"
               alt="profile-pic"
             />
-            <input type="radio" id="image3" name="profilepic" value="image3" />
+            <input
+              onclick="getimage3()"
+              type="radio"
+              id="image3"
+              name="profilepic"
+              value="https://randomuser.me/api/portraits/men/80.jpg"
+            />
             <img
               class="profile-pic-adduser"
               src="https://randomuser.me/api/portraits/men/80.jpg"
               alt="profile-pic"
             />
-            <input type="radio" id="image4" name="profilepic" value="image4" />
+            <input
+              onclick="getimage4()"
+              type="radio"
+              id="image4"
+              name="profilepic"
+              value="https://randomuser.me/api/portraits/women/40.jpg"
+            />
             <img
               class="profile-pic-adduser"
               src="https://randomuser.me/api/portraits/women/40.jpg"
@@ -77,25 +107,72 @@
         <div class="gender">
           <p>Gender</p>
           <div class="radio-gender">
-            <input type="radio" id="male" name="gender" value="male" />
+            <input
+              onclick="getMale()"
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+            />
             <label for="male">Male</label><br />
-            <input type="radio" id="female" name="gender" value="female" />
+            <input
+              onclick="getFemale()"
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+            />
             <label for="female">Female</label><br />
           </div>
         </div>
         <div class="department">
           <p>Department</p>
           <div class="checkbox-department">
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-            <label for="vehicle1">HR</label>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-            <label for="vehicle2">Sales</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-            <label for="vehicle3">Finance</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-            <label for="vehicle3">Engineer</label>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-            <label for="vehicle3">Others</label>
+            <input
+              onclick="getCheckboxValue()"
+              class="checkbox"
+              type="checkbox"
+              id="HR"
+              name="HR"
+              value="HR"
+            />
+            <label for="HR">HR</label>
+            <input
+              onclick="getCheckboxValue()"
+              class="checkbox"
+              type="checkbox"
+              id="SALES"
+              name="SALES"
+              value="SALES"
+            />
+            <label for="SALES">Sales</label>
+            <input
+              onclick="getCheckboxValue()"
+              class="checkbox"
+              type="checkbox"
+              id="Finance"
+              name="Finance"
+              value="Finance"
+            />
+            <label for="Finance">Finance</label>
+            <input
+              onclick="getCheckboxValue()"
+              class="checkbox"
+              type="checkbox"
+              id="Engineer"
+              name="Engineer"
+              value="Engineer"
+            />
+            <label for="Engineer">Engineer</label>
+            <input
+              onclick="getCheckboxValue()"
+              class="checkbox"
+              type="checkbox"
+              id="Others"
+              name="Others"
+              value="Others"
+            />
+            <label for="Others">Others</label>
           </div>
         </div>
         <div class="salary">
