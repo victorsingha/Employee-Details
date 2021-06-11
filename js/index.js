@@ -20,6 +20,10 @@ async function getEmpList() {
 function display(list) {
   var design = "";
   list.forEach((employee) => {
+    var department = "";
+    employee[`department[]`].forEach((dept) => {
+      department = department + `<div class="chip">${dept}</div>`;
+    });
     design =
       design +
       `<div class="table-rows">
@@ -33,9 +37,7 @@ function display(list) {
       </div>
       <div class="gender"><p>${employee.gender}</p></div>
       <div class="department">
-        <div class="chip">Sales</div>
-        <div class="chip">HR</div>
-        <div class="chip">Finance</div>
+        ${department}
       </div>
       <div class="salary">
         <p><span>₹</span> ${employee.salary}</p>

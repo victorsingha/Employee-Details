@@ -3,7 +3,7 @@
     {
       "name": "John Doe",
       "profile": "https://randomuser.me/api/portraits/men/80.jpg",
-      "gender": "male",
+      "gender": "Male",
       "department[]": [
         "HR",
         "SALES"
@@ -14,24 +14,23 @@
       "id": 1
     },
     {
-      "name": "Victor Singha",
+      "name": "Steve Roger",
       "profile": "https://randomuser.me/api/portraits/men/94.jpg",
-      "gender": "male",
+      "gender": "Male",
       "department[]": [
         "Finance",
         "Engineer"
       ],
-      "salary": "",
-      "startdate": "08-Apr-2020",
+      "salary": "34000",
+      "startdate": "08 Apr 2020",
       "notes": "",
       "id": 2
     },
     {
-      "name": "Victor Singha",
+      "name": "Oogway",
       "profile": "https://randomuser.me/api/portraits/men/94.jpg",
-      "gender": "male",
+      "gender": "Male",
       "department[]": [
-        "HR",
         "SALES",
         "Finance",
         "Engineer"
@@ -44,7 +43,7 @@
     {
       "name": "Alex",
       "profile": "https://randomuser.me/api/portraits/women/40.jpg",
-      "gender": "female",
+      "gender": "Female",
       "department[]": [
         "SALES",
         "Finance"
@@ -53,6 +52,20 @@
       "startdate": "15 Oct 2020",
       "notes": "",
       "id": 4
+    },
+    {
+      "name": "Shifi Taylor",
+      "profile": "https://randomuser.me/api/portraits/women/75.jpg",
+      "gender": "Female",
+      "department[]": [
+        "HR",
+        "SALES",
+        "Finance"
+      ],
+      "salary": "44723",
+      "startdate": "17 Apr 2021",
+      "notes": "",
+      "id": 5
     }
   ]
 }
