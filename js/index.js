@@ -10,10 +10,10 @@ async function getEmpList() {
     resolve(list);
   });
 }
-async function program() {
+async function main() {
   var list = await getEmpList();
   console.log(list);
   console.log("hi");
 }
 
-program();
+main();
