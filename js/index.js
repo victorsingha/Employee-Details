@@ -44,7 +44,7 @@ function display(list) {
       </div>
       <div class="start-date"><p>${employee.startdate}</p></div>
       <div class="actions">
-        <i class="fa fa-lg fa-trash"></i> <i class="fa fa-lg fa-edit"></i>
+        <i onClick="console.log('${employee.id}')" class="fa fa-lg fa-trash"></i> <i onClick="console.log('${employee.id}')" class="fa fa-lg fa-edit"></i>
       </div>
     </div>`;
   });
