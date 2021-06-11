@@ -19,14 +19,31 @@ async function getEmpList() {
 }
 function deleteEmp(id) {
   console.log(id);
-  var url = `http://localhost:3000/employee/${id}`;
-  $.ajax({
-    url: url,
-    type: "DELETE",
-    success: function (result) {
-      console.log(result);
-    },
-  });
+  console.log(list);
+  list = removeByAttr(list, "id", id);
+  display(list);
+  // var url = `http://localhost:3000/employee/${id}`;
+  // $.ajax({
+  //   url: url,
+  //   type: "DELETE",
+  //   success: function (result) {
+  //     console.log(result);
+  //   },
+  // });
+}
+function removeByAttr(arr, attr, value) {
+  var i = arr.length;
+  while (i--) {
+    if (
+      arr[i] &&
+      arr[i].hasOwnProperty(attr) &&
+      arguments.length > 2 &&
+      arr[i][attr] === value
+    ) {
+      arr.splice(i, 1);
+    }
+  }
+  return arr;
 }
 function updateEmp(id) {
   console.log(id);
