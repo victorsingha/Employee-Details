@@ -28,6 +28,9 @@ function deleteEmp(id) {
     },
   });
 }
+function updateEmp(id) {
+  console.log(id);
+}
 function display(list) {
   var design = "";
   list.forEach((employee) => {
@@ -55,7 +58,7 @@ function display(list) {
       </div>
       <div class="start-date"><p>${employee.startdate}</p></div>
       <div class="actions">
-        <i onClick="deleteEmp(${employee.id})" class="fa fa-lg fa-trash"></i> <i onClick="deleteEmp(${employee.id})" class="fa fa-lg fa-edit"></i>
+        <i onClick="deleteEmp(${employee.id})" class="fa fa-lg fa-trash"></i> <i onClick="updateEmp(${employee.id})" class="fa fa-lg fa-edit"></i>
       </div>
     </div>`;
   });
