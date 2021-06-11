@@ -82,7 +82,7 @@ document.querySelector("#submit").addEventListener("click", function (event) {
   employeeData.department = getCheckboxValue();
   employeeData.startdate = getStartDate();
   POST_DATA(employeeData);
-  GET_DATA();
+  // GET_DATA();
 });
 document.querySelector("#cancel").addEventListener("click", function (event) {
   event.preventDefault();
