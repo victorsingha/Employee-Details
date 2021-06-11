@@ -66,6 +66,19 @@
       "startdate": "17 Apr 2021",
       "notes": "",
       "id": 5
+    },
+    {
+      "name": "Raghu Lal",
+      "profile": "https://randomuser.me/api/portraits/men/80.jpg",
+      "gender": "Male",
+      "department[]": [
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "44607",
+      "startdate": "17 Jun 2020",
+      "notes": "",
+      "id": 6
     }
   ]
 }

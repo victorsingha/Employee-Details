@@ -94,6 +94,9 @@ document.querySelector("#reset").addEventListener("click", function (event) {
 function POST_DATA(employee) {
   $.post(url, employee, function (data, status) {
     console.log(data, status);
+    if (status === "success") {
+      location.href = "index.html";
+    }
   });
 }
 function GET_DATA() {
