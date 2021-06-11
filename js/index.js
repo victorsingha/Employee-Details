@@ -17,6 +17,17 @@ async function getEmpList() {
     resolve(list);
   });
 }
+function deleteEmp(id) {
+  console.log(id);
+  var url = `http://localhost:3000/employee/${id}`;
+  $.ajax({
+    url: url,
+    type: "DELETE",
+    success: function (result) {
+      console.log(result);
+    },
+  });
+}
 function display(list) {
   var design = "";
   list.forEach((employee) => {
@@ -44,7 +55,7 @@ function display(list) {
       </div>
       <div class="start-date"><p>${employee.startdate}</p></div>
       <div class="actions">
-        <i onClick="console.log('${employee.id}')" class="fa fa-lg fa-trash"></i> <i onClick="console.log('${employee.id}')" class="fa fa-lg fa-edit"></i>
+        <i onClick="deleteEmp(${employee.id})" class="fa fa-lg fa-trash"></i> <i onClick="deleteEmp(${employee.id})" class="fa fa-lg fa-edit"></i>
       </div>
     </div>`;
   });

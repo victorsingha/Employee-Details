@@ -4,10 +4,7 @@
       "name": "John Doe",
       "profile": "https://randomuser.me/api/portraits/men/80.jpg",
       "gender": "Male",
-      "department[]": [
-        "HR",
-        "SALES"
-      ],
+      "department[]": ["HR", "SALES"],
       "salary": "45169",
       "startdate": "02-09-2020",
       "notes": "",
@@ -17,10 +14,7 @@
       "name": "Steve Roger",
       "profile": "https://randomuser.me/api/portraits/men/94.jpg",
       "gender": "Male",
-      "department[]": [
-        "Finance",
-        "Engineer"
-      ],
+      "department[]": ["Finance", "Engineer"],
       "salary": "34000",
       "startdate": "08 Apr 2020",
       "notes": "",
@@ -30,11 +24,7 @@
       "name": "Oogway",
       "profile": "https://randomuser.me/api/portraits/men/94.jpg",
       "gender": "Male",
-      "department[]": [
-        "SALES",
-        "Finance",
-        "Engineer"
-      ],
+      "department[]": ["SALES", "Finance", "Engineer"],
       "salary": "48158",
       "startdate": "01 May 2019",
       "notes": "",
@@ -44,10 +34,7 @@
       "name": "Alex",
       "profile": "https://randomuser.me/api/portraits/women/40.jpg",
       "gender": "Female",
-      "department[]": [
-        "SALES",
-        "Finance"
-      ],
+      "department[]": ["SALES", "Finance"],
       "salary": "45808",
       "startdate": "15 Oct 2020",
       "notes": "",
@@ -57,11 +44,7 @@
       "name": "Shifi Taylor",
       "profile": "https://randomuser.me/api/portraits/women/75.jpg",
       "gender": "Female",
-      "department[]": [
-        "HR",
-        "SALES",
-        "Finance"
-      ],
+      "department[]": ["HR", "SALES", "Finance"],
       "salary": "44723",
       "startdate": "17 Apr 2021",
       "notes": "",
@@ -71,10 +54,7 @@
       "name": "Raghu Lal",
       "profile": "https://randomuser.me/api/portraits/men/80.jpg",
       "gender": "Male",
-      "department[]": [
-        "Finance",
-        "Engineer"
-      ],
+      "department[]": ["Finance", "Engineer"],
       "salary": "44607",
       "startdate": "17 Jun 2020",
       "notes": "",
@@ -84,10 +64,7 @@
       "name": "Dipesh",
       "profile": "https://randomuser.me/api/portraits/men/94.jpg",
       "gender": "Male",
-      "department[]": [
-        "Finance",
-        "Engineer"
-      ],
+      "department[]": ["Finance", "Engineer"],
       "salary": "44202",
       "startdate": "16 Feb 2021",
       "notes": "",
