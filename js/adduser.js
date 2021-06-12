@@ -120,8 +120,24 @@ document.querySelector("#submit").addEventListener("click", function (event) {
   event.preventDefault();
   employeeData.department = getCheckboxValue();
   employeeData.startdate = getStartDate();
-  POST_DATA(employeeData);
-  // GET_DATA();
+  const id = localStorage.getItem("id");
+  if (id != null) {
+    console.log(employeeData);
+    var url = `http://localhost:3000/employee/${id}`;
+    $.ajax({
+      url: url,
+      type: "PUT",
+      data: employeeData,
+      success: function (result, status) {
+        console.log(result);
+        if (status === "success") {
+          location.href = "index.html";
+        }
+      },
+    });
+  } else {
+    POST_DATA(employeeData);
+  }
 });
 document.querySelector("#cancel").addEventListener("click", function (event) {
   event.preventDefault();
@@ -138,8 +154,8 @@ function POST_DATA(employee) {
     }
   });
 }
-function GET_DATA() {
-  $.get(url, function (data, status) {
-    console.log(data, status);
-  });
-}
+// function GET_DATA() {
+//   $.get(url, function (data, status) {
+//     console.log(data, status);
+//   });
+// }
