@@ -14,6 +14,18 @@ if (id != null) {
   const url = `http://localhost:3000/employee/${id}`;
   $.get(url, function (data, status) {
     console.log(data, status);
+    //set Name in Input Text
+    $("#name").val(data.name);
+    employeeData.name = data.name;
+    //set Profile Picture
+    $(`input[name=profilepic][value="${data.profile}"]`).attr(
+      "checked",
+      "checked"
+    );
+    employeeData.profile = data.profile;
+    //set GENDER
+    $(`input[name=gender][value="${data.gender}"]`).attr("checked", "checked");
+    employeeData.gender = data.gender;
   });
 }
 
