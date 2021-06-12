@@ -15,7 +15,8 @@
       "notes": "Hello"
     },
     {
-      "name": "Alex",
+      "id": 4,
+      "name": "Alex Waston",
       "profile": "https://randomuser.me/api/portraits/women/40.jpg",
       "gender": "Female",
       "department[]": [
@@ -24,8 +25,7 @@
       ],
       "salary": "45808",
       "startdate": "15 Oct 2020",
-      "notes": "",
-      "id": 4
+      "notes": ""
     },
     {
       "name": "Shifi Taylor",

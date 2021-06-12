@@ -144,6 +144,7 @@ document.querySelector("#cancel").addEventListener("click", function (event) {
   location.href = "index.html";
 });
 document.querySelector("#reset").addEventListener("click", function (event) {
+  localStorage.removeItem("id");
   // event.preventDefault();
 });
 function POST_DATA(employee) {
