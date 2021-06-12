@@ -6,7 +6,7 @@
       "gender": "Male",
       "department[]": ["HR", "SALES"],
       "salary": "45169",
-      "startdate": "02-09-2020",
+      "startdate": "02 Jan 2020",
       "notes": "Hello",
       "id": 1
     },

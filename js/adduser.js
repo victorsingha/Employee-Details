@@ -32,6 +32,18 @@ if (id != null) {
       $(`input[name=${department}]`).attr("checked", true);
     });
     employeeData.department = data[`department[]`];
+    //set Salary
+    document.getElementById("rangeValue").value = data.salary;
+    employeeData.salary = data.salary;
+    //set Date
+    console.log(data.startdate.split(/\s* \s*/));
+    $("select#select-day").val(`${data.startdate.split(/\s* \s*/)[0]}`);
+    $("select#select-month").val(`${data.startdate.split(/\s* \s*/)[1]}`);
+    $("select#select-year").val(`${data.startdate.split(/\s* \s*/)[2]}`);
+    employeeData.startdate = data.startdate;
+    //set Notes
+    $("#notes").val(data.notes);
+    employeeData.notes = data.notes;
   });
 }
 
