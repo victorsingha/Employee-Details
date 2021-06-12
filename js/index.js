@@ -4,6 +4,7 @@ var list = [];
 main();
 
 async function main() {
+  localStorage.removeItem("id");
   var list = await getEmpList();
   console.log(list);
   display(list);
@@ -46,7 +47,10 @@ function removeByAttr(arr, attr, value) {
   return arr;
 }
 function updateEmp(id) {
-  console.log(id);
+  // console.log(id);
+  localStorage.setItem("id", id);
+  console.log(localStorage.getItem("id"));
+  location.href = "adduser.html";
 }
 function display(list) {
   var design = "";

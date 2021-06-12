@@ -1,4 +1,5 @@
 var employeeData = {
+  id: null,
   name: "",
   profile: "",
   gender: "",
@@ -7,6 +8,14 @@ var employeeData = {
   startdate: "",
   notes: "",
 };
+
+var id = localStorage.getItem("id");
+if (id != null) {
+  const url = `http://localhost:3000/employee/${id}`;
+  $.get(url, function (data, status) {
+    console.log(data, status);
+  });
+}
 
 const url = "http://localhost:3000/employee";
 
