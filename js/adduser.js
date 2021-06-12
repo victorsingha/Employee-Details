@@ -26,6 +26,12 @@ if (id != null) {
     //set GENDER
     $(`input[name=gender][value="${data.gender}"]`).attr("checked", "checked");
     employeeData.gender = data.gender;
+    //set Department
+    console.log(data[`department[]`]);
+    data[`department[]`].forEach((department) => {
+      $(`input[name=${department}]`).attr("checked", true);
+    });
+    employeeData.department = data[`department[]`];
   });
 }
 

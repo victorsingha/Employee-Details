@@ -7,7 +7,7 @@
       "department[]": ["HR", "SALES"],
       "salary": "45169",
       "startdate": "02-09-2020",
-      "notes": "",
+      "notes": "Hello",
       "id": 1
     },
     {
