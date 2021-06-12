@@ -14,34 +14,34 @@ if (id != null) {
   const url = `http://localhost:3000/employee/${id}`;
   $.get(url, function (data, status) {
     console.log(data, status);
-    //set Name in Input Text
+    //autofill Name in Input Text
     $("#name").val(data.name);
     employeeData.name = data.name;
-    //set Profile Picture
+    //autofill Profile Picture
     $(`input[name=profilepic][value="${data.profile}"]`).attr(
       "checked",
       "checked"
     );
     employeeData.profile = data.profile;
-    //set GENDER
+    //autofill GENDER
     $(`input[name=gender][value="${data.gender}"]`).attr("checked", "checked");
     employeeData.gender = data.gender;
-    //set Department
+    //autofill Department
     console.log(data[`department[]`]);
     data[`department[]`].forEach((department) => {
       $(`input[name=${department}]`).attr("checked", true);
     });
     employeeData.department = data[`department[]`];
-    //set Salary
+    //autofill Salary
     document.getElementById("rangeValue").value = data.salary;
     employeeData.salary = data.salary;
-    //set Date
+    //autofill Date
     console.log(data.startdate.split(/\s* \s*/));
     $("select#select-day").val(`${data.startdate.split(/\s* \s*/)[0]}`);
     $("select#select-month").val(`${data.startdate.split(/\s* \s*/)[1]}`);
     $("select#select-year").val(`${data.startdate.split(/\s* \s*/)[2]}`);
     employeeData.startdate = data.startdate;
-    //set Notes
+    //autofill Notes
     $("#notes").val(data.notes);
     employeeData.notes = data.notes;
   });
